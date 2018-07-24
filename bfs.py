@@ -2,9 +2,12 @@
 from __future__ import print_function
 import Queue
 import numpy as np
+import math
 """
 Basic Algorithms using BFS
 """
+
+
 def find_shortest_path(arr, target_i, target_j):
     """
     the shorted path from (0, 0) to (i, j)
@@ -28,10 +31,50 @@ def find_shortest_path(arr, target_i, target_j):
                 flag[i][j] = True
     return -1
 
+
+def num_squares(n):
+    """
+    return the least number of square number which sum up to n
+    equals to: find the shortes path between 0 to n
+    """
+    sqr_list = gen_squares(n)
+    queue = Queue.Queue()
+    queue.put((0, 0))
+    flag = np.zeros(n, dtype=bool)
+
+    while not queue.empty():
+        cur_pos = queue.get()
+        cur_num, step = cur_pos[0], cur_pos[1]
+        for sqr_num in sqr_list:
+            new_num = cur_num + sqr_num
+            if new_num == n:
+                return step + 1
+            elif new_num > n:  # exceed target n, break for loop
+                break
+            elif new_num < n and not flag[new_num]:
+                queue.put((new_num, step + 1))
+                flag[new_num] = True
+    return "Error. No number n has no return"
+
+
+def gen_squares(n):
+    """return all square number below n"""
+    sqr_list = []
+    i = 1
+    while i * i <= n:
+        sqr_list.append(i*i)
+        i += 1
+    return sqr_list
+
+
 if __name__ == "__main__":
-    arr = np.array([[1,1,0,1], [1,0,1,0],[1,1,1,1],[1,0,1,1]])
+    # test find_shortest_path
+    arr = np.array([[1, 1, 0, 1], [1, 0, 1, 0], [1, 1, 1, 1], [1, 0, 1, 1]])
     # import pdb;pdb.set_trace()
     step = find_shortest_path(arr, 3, 2)
     print('shorted steps: %d' % step)
 
+    # test num_squares
+    for i in range(100):
+        print('%d\t%s' % (i, str(num_squares(i))))
 
