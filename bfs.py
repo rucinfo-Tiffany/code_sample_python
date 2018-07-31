@@ -32,8 +32,8 @@ class BFS(object):
                     queue.put((i, j, step))
                     flag[i][j] = True
         return -1
-    
-    
+
+
     def num_squares(self, n):
         """
         return the least number of square number which sum up to n
@@ -43,7 +43,7 @@ class BFS(object):
         queue = Queue.Queue()
         queue.put((0, 0))
         flag = np.zeros(n, dtype=bool)
-    
+
         while not queue.empty():
             cur_pos = queue.get()
             cur_num, step = cur_pos[0], cur_pos[1]
@@ -57,8 +57,8 @@ class BFS(object):
                     queue.put((new_num, step + 1))
                     flag[new_num] = True
         return "Error. No number n has no return"
-    
-    
+
+
     def gen_squares(self, n):
         """return all square number below n"""
         sqr_list = []
