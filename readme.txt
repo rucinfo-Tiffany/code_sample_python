@@ -2,7 +2,7 @@
 - BFS
 - DFS
 - Heap
-- Dynamic Programming
+- DP
 - Search
 - Sort
 - Tree
