@@ -3,6 +3,15 @@
 - DFS
 - Heap
 - DP
+- Backtrack
 - Search
 - Sort
 - Tree
+- Dual Pointer
+- Greedy
+- Graph
+- Hash
+- Math
+
+
+- google code jam solution

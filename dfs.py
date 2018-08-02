@@ -18,20 +18,20 @@ class DFS(object):
                     if not flag[i+d[0]][j+d[1]] and matrix[i+d[0]][j+d[1]] >= matrix[i][j]:
                         flag[i+d[0]][j+d[1]]=1
                         self.dfs_2d(matrix, flag, i+d[0], j+d[1])
-    
-    
+
+
     def dfs_1d(self, arr, flag, cur_i, count):
         # implement by recursive way
         if flag[cur_i] > 0:  # already visit
             return flag
-    
+
         flag[cur_i] = count
         for j in range(arr.shape[0]):
             if flag[j] or j == cur_i or not arr[cur_i][j]:
                 continue
             flag = self.dfs_1d(arr, flag, j, count)  # dfs friend j
         return flag
-    
+
 
     def pacificAtlantic(self, matrix):
        """
@@ -54,14 +54,14 @@ class DFS(object):
            atlanticFlag[m-1][j] = 1
            self.dfs_2d(matrix, pacificFlag, 0, j)
            self.dfs_2d(matrix, atlanticFlag, m-1, j)
-           
+
        res = []
        for i in range(m):
            for j in range(n):
                if pacificFlag[i][j] and atlanticFlag[i][j]:
                    res.append([i, j])
        return res
-                
+
 
     def findCircleNum(self, M):
         """
@@ -78,7 +78,7 @@ class DFS(object):
             if flag[i] < 1:
                 count += 1
             flag = self.dfs_1d(arr, flag, i, count)
-    
+
         return count
 
 
