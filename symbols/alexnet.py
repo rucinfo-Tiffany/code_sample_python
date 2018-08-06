@@ -23,6 +23,44 @@ detail structure of each layer reference: https://blog.csdn.net/Chenyukuai6625/a
 """
 import mxnet as mx
 import numpy as np
+from matplotlib.pyplot import imshow
+import multiprocessing
+import os
+
+mx.random.seed(42) # set seed for repeatability
+
+def plot_mx_array(array):
+    assert array.shape[2] == 3, "RGB Channel should be last"
+    imshow((array.clip(0, 255)/255).asnumpy())
+
+def create_aug_auto(image):
+    # created automatically
+    aug_list = mx.image.CreateAugmenter(data_shape=(3, 300, 300), rand_crop=0.5,
+            rand_mirror=True, mean=True, brightness=0.125, contrast=0.125,
+            saturation=0.125, pca_noise=0.05, inter_method=10)
+    aug_image = image.copy()
+    for aug in aug_list:
+        aug_image = aug(aug_image)
+    plot_mx_array(aug_image)
+
+def create_aug_manual(image):
+    # created automatically
+    aug_list = [mx.image.RandomCropAug(size=(100, 100)),
+                mx.image.ColorJitterAug(brightness=1)
+                mx.image.HorizontalFlipAug(p=1)]
+    aug_image = example_image.copy()
+    for aug in aug_list:
+        aug_image = aug(aug_image)
+    plot_mx_array(aug_image)
+
+def get_image_iter(batch_size):
+    """
+    create data iterator with NDArrayIter
+    """
+    mnist = mx.test_utils.get_mnist()
+    train = mx.io.NDArrayIter(mnist['train_data'], mnist['train_label'], batch_size, shuffle=True)
+    val = mx.io.NDArrayIter(mnist['test_data'], mnist['test_label'], batch_size)
+    return (train, val)
 
 def get_symbol(num_classes, dtype='float32', **kwargs):
     input_data = mx.sym.Variable(name="data")
@@ -80,3 +118,9 @@ def get_symbol(num_classes, dtype='float32', **kwargs):
         fc3 = mx.sym.Cast(data=fc3, dtype=np.float32)
     softmax = mx.sym.SoftmaxOutput(data=fc3, name='softmax')
     return softmax
+
+if __name__ = "__main__":
+    image_dir = os.path.join("data", "images")
+    mx.test_utils.download('https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/doc/tutorials/data_aug/inputs/0.jpg', dirname=image_dir)
+    example_image = mx.image.imread(os.path.join(image_dir,"0.jpg")).astype("float32")
+    plot_mx_array(example_image)
