@@ -1,0 +1,680 @@
+602
+# of tree nodes: 671, tree height: 5, # of leaves: 590
+0 1
+1 90
+2 261
+3 262
+4 50
+5 7
+Entity
+├── Animal
+│   ├── Bird
+│   │   ├── Blue jay
+│   │   ├── Canary
+│   │   ├── Chicken
+│   │   ├── Duck
+│   │   ├── Eagle
+│   │   ├── Falcon
+│   │   ├── Goose
+│   │   ├── Magpie
+│   │   ├── Ostrich
+│   │   ├── Owl
+│   │   ├── Parrot
+│   │   ├── Penguin
+│   │   ├── Raven
+│   │   ├── Sparrow
+│   │   ├── Swan
+│   │   ├── Turkey
+│   │   └── Woodpecker
+│   ├── Fish
+│   │   ├── Goldfish
+│   │   ├── Rays and skates
+│   │   ├── Seahorse
+│   │   └── Shark
+│   ├── Invertebrate
+│   │   ├── Centipede
+│   │   ├── Insect
+│   │   │   ├── Ant
+│   │   │   ├── Bee
+│   │   │   ├── Beetle
+│   │   │   │   └── Ladybug
+│   │   │   ├── Dragonfly
+│   │   │   └── Moths and butterflies
+│   │   │       ├── Butterfly
+│   │   │       └── Caterpillar
+│   │   ├── Marine invertebrates
+│   │   │   ├── Crab
+│   │   │   ├── Isopod
+│   │   │   ├── Jellyfish
+│   │   │   ├── Lobster
+│   │   │   ├── Shrimp
+│   │   │   ├── Squid
+│   │   │   └── Starfish
+│   │   ├── Oyster
+│   │   ├── Scorpion
+│   │   ├── Snail
+│   │   ├── Spider
+│   │   ├── Tick
+│   │   └── Worm
+│   ├── Mammal
+│   │   ├── Alpaca
+│   │   ├── Antelope
+│   │   ├── Armadillo
+│   │   ├── Bat
+│   │   ├── Bull
+│   │   ├── Camel
+│   │   ├── Carnivore
+│   │   │   ├── Bear
+│   │   │   │   ├── Brown bear
+│   │   │   │   ├── Panda
+│   │   │   │   ├── Polar bear
+│   │   │   │   └── Teddy bear
+│   │   │   ├── Cat
+│   │   │   ├── Cheetah
+│   │   │   ├── Dog
+│   │   │   ├── Fox
+│   │   │   ├── Jaguar
+│   │   │   ├── Leopard
+│   │   │   ├── Lion
+│   │   │   ├── Lynx
+│   │   │   ├── Otter
+│   │   │   ├── Raccoon
+│   │   │   ├── Red panda
+│   │   │   └── Tiger
+│   │   ├── Cattle
+│   │   ├── Deer
+│   │   ├── Elephant
+│   │   ├── Giraffe
+│   │   ├── Goat
+│   │   ├── Hamster
+│   │   ├── Hedgehog
+│   │   ├── Hippopotamus
+│   │   ├── Horse
+│   │   ├── Kangaroo
+│   │   ├── Koala
+│   │   ├── Marine mammal
+│   │   │   ├── Dolphin
+│   │   │   ├── Harbor seal
+│   │   │   ├── Sea lion
+│   │   │   └── Whale
+│   │   ├── Monkey
+│   │   ├── Mouse
+│   │   ├── Mule
+│   │   ├── Pig
+│   │   ├── Porcupine
+│   │   ├── Rabbit
+│   │   ├── Rhinoceros
+│   │   ├── Sheep
+│   │   ├── Skunk
+│   │   ├── Squirrel
+│   │   └── Zebra
+│   ├── Reptile
+│   │   ├── Crocodile
+│   │   ├── Dinosaur
+│   │   ├── Frog
+│   │   ├── Lizard
+│   │   ├── Snake
+│   │   └── Turtle
+│   │       ├── Sea turtle
+│   │       └── Tortoise
+│   └── Shellfish
+│       ├── Crab
+│       ├── Lobster
+│       ├── Oyster
+│       └── Shrimp
+├── Auto part
+│   ├── Seat belt
+│   ├── Tire
+│   ├── Vehicle registration plate
+│   └── Wheel
+├── Bathroom accessory
+│   ├── Facial tissue holder
+│   ├── Soap dispenser
+│   ├── Toilet paper
+│   └── Towel
+├── Beehive
+├── Bicycle wheel
+├── Billboard
+├── Book
+├── Building
+│   ├── Castle
+│   ├── Convenience store
+│   ├── House
+│   ├── Lighthouse
+│   ├── Office building
+│   ├── Skyscraper
+│   ├── Tower
+│   └── Tree house
+├── Candle
+├── Cassette deck
+├── Cat furniture
+├── Clock
+│   ├── Alarm clock
+│   ├── Digital clock
+│   └── Wall clock
+├── Clothing
+│   ├── Brassiere
+│   ├── Coat
+│   ├── Dress
+│   ├── Fashion accessory
+│   │   ├── Belt
+│   │   ├── Crown
+│   │   ├── Earrings
+│   │   ├── Glasses
+│   │   ├── Glove
+│   │   │   └── Baseball glove
+│   │   ├── Goggles
+│   │   ├── Handbag
+│   │   ├── Hat
+│   │   │   ├── Cowboy hat
+│   │   │   ├── Fedora
+│   │   │   ├── Sombrero
+│   │   │   └── Sun hat
+│   │   ├── Necklace
+│   │   ├── Scarf
+│   │   ├── Sock
+│   │   ├── Sunglasses
+│   │   ├── Tiara
+│   │   ├── Tie
+│   │   ├── Umbrella
+│   │   └── Watch
+│   ├── Footwear
+│   │   ├── Boot
+│   │   ├── High heels
+│   │   ├── Roller skates
+│   │   └── Sandal
+│   ├── Hat
+│   │   ├── Cowboy hat
+│   │   ├── Fedora
+│   │   ├── Sombrero
+│   │   └── Sun hat
+│   ├── Helmet
+│   │   ├── Bicycle helmet
+│   │   └── Football helmet
+│   ├── Jacket
+│   ├── Luggage and bags
+│   │   ├── Backpack
+│   │   ├── Briefcase
+│   │   ├── Handbag
+│   │   └── Suitcase
+│   ├── Scarf
+│   ├── Shirt
+│   ├── Shorts
+│   ├── Skirt
+│   │   └── Miniskirt
+│   ├── Sports uniform
+│   ├── Suit
+│   ├── Swim cap
+│   ├── Swimwear
+│   ├── Tiara
+│   └── Trousers
+│       └── Jeans
+├── Coconut
+├── Coin
+├── Computer keyboard
+├── Computer monitor
+├── Computer mouse
+├── Cosmetics
+│   ├── Face powder
+│   ├── Hair spray
+│   ├── Lipstick
+│   └── Perfume
+├── Countertop
+├── Curtain
+├── Dog bed
+├── Door
+├── Door handle
+├── Drink
+│   ├── Beer
+│   ├── Cocktail
+│   ├── Coffee
+│   ├── Juice
+│   ├── Tea
+│   └── Wine
+├── Fire hydrant
+├── Fireplace
+├── Flag
+├── Food
+│   ├── Baked goods
+│   │   ├── Bagel
+│   │   ├── Bread
+│   │   ├── Cookie
+│   │   ├── Muffin
+│   │   ├── Pastry
+│   │   │   ├── Croissant
+│   │   │   ├── Doughnut
+│   │   │   └── Tart
+│   │   └── Pretzel
+│   ├── Burrito
+│   ├── Cooking spray
+│   ├── Dairy
+│   │   ├── Cheese
+│   │   └── Milk
+│   ├── Dessert
+│   │   ├── Cake
+│   │   ├── Candy
+│   │   ├── Cookie
+│   │   ├── Ice cream
+│   │   └── Muffin
+│   ├── Egg
+│   ├── Fast food
+│   │   ├── French fries
+│   │   └── Hot dog
+│   ├── Fruit
+│   │   ├── Apple
+│   │   ├── Banana
+│   │   ├── Cantaloupe
+│   │   ├── Common fig
+│   │   ├── Grape
+│   │   ├── Grapefruit
+│   │   ├── Lemon
+│   │   ├── Mango
+│   │   ├── Orange
+│   │   ├── Peach
+│   │   ├── Pear
+│   │   ├── Pineapple
+│   │   ├── Pomegranate
+│   │   ├── Strawberry
+│   │   ├── Tomato
+│   │   └── Watermelon
+│   ├── Guacamole
+│   ├── Honeycomb
+│   ├── Mushroom
+│   ├── Pancake
+│   ├── Pasta
+│   ├── Pizza
+│   ├── Sandwich
+│   │   ├── Hamburger
+│   │   └── Submarine sandwich
+│   ├── Seafood
+│   │   ├── Shellfish
+│   │   │   ├── Crab
+│   │   │   ├── Lobster
+│   │   │   ├── Oyster
+│   │   │   └── Shrimp
+│   │   └── Squid
+│   ├── Snack
+│   │   ├── Cookie
+│   │   ├── Popcorn
+│   │   └── Pretzel
+│   ├── Sushi
+│   ├── Taco
+│   ├── Vegetable
+│   │   ├── Artichoke
+│   │   ├── Asparagus
+│   │   ├── Bell pepper
+│   │   ├── Broccoli
+│   │   ├── Cabbage
+│   │   ├── Carrot
+│   │   ├── Cucumber
+│   │   ├── Potato
+│   │   ├── Radish
+│   │   ├── Salad
+│   │   ├── Squash
+│   │   │   ├── Pumpkin
+│   │   │   └── Zucchini
+│   │   ├── Tomato
+│   │   └── Winter melon
+│   └── Waffle
+├── Fountain
+├── Furniture
+│   ├── Bathroom cabinet
+│   ├── Bed
+│   │   ├── Infant bed
+│   │   └── Studio couch
+│   ├── Bench
+│   ├── Bookcase
+│   ├── Cabinetry
+│   ├── Chair
+│   ├── Chest of drawers
+│   ├── Closet
+│   ├── Couch
+│   │   ├── Loveseat
+│   │   └── Sofa bed
+│   ├── Cupboard
+│   ├── Desk
+│   ├── Drawer
+│   ├── Filing cabinet
+│   ├── Nightstand
+│   ├── Shelf
+│   ├── Stool
+│   ├── Table
+│   │   ├── Coffee table
+│   │   └── Kitchen & dining room table
+│   ├── Wall clock
+│   ├── Wardrobe
+│   └── Wine rack
+├── Headphones
+├── Home appliance
+│   ├── Blender
+│   ├── Ceiling fan
+│   ├── Coffeemaker
+│   ├── Dishwasher
+│   ├── Gas stove
+│   ├── Hair dryer
+│   ├── Hand dryer
+│   ├── Heater
+│   ├── Humidifier
+│   ├── Kettle
+│   ├── Mechanical fan
+│   ├── Microwave oven
+│   ├── Mixer
+│   ├── Oven
+│   ├── Refrigerator
+│   ├── Sewing machine
+│   ├── Toaster
+│   ├── Washing machine
+│   └── Wood-burning stove
+├── Human arm
+├── Human beard
+├── Human body
+├── Human ear
+├── Human eye
+├── Human face
+├── Human foot
+├── Human hair
+├── Human hand
+├── Human head
+├── Human leg
+├── Human mouth
+├── Human nose
+├── Ipod
+├── Jacuzzi
+├── Kitchenware
+│   ├── Frying pan
+│   ├── Kitchen appliance
+│   │   ├── Blender
+│   │   ├── Coffeemaker
+│   │   ├── Dishwasher
+│   │   ├── Food processor
+│   │   ├── Microwave oven
+│   │   ├── Mixer
+│   │   ├── Oven
+│   │   ├── Pressure cooker
+│   │   ├── Refrigerator
+│   │   ├── Slow cooker
+│   │   └── Waffle iron
+│   ├── Kitchen utensil
+│   │   ├── Bottle opener
+│   │   ├── Can opener
+│   │   ├── Chopsticks
+│   │   ├── Cutting board
+│   │   ├── Drinking straw
+│   │   ├── Fork
+│   │   ├── Knife
+│   │   ├── Ladle
+│   │   ├── Measuring cup
+│   │   ├── Pizza cutter
+│   │   ├── Spatula
+│   │   ├── Spoon
+│   │   └── Whisk
+│   ├── Spice rack
+│   ├── Tableware
+│   │   ├── Bottle
+│   │   ├── Bowl
+│   │   ├── Cake stand
+│   │   ├── Chopsticks
+│   │   ├── Cocktail shaker
+│   │   ├── Coffee cup
+│   │   ├── Fork
+│   │   ├── Jug
+│   │   ├── Kitchen knife
+│   │   ├── Mixing bowl
+│   │   ├── Mug
+│   │   ├── Pitcher
+│   │   ├── Plate
+│   │   ├── Platter
+│   │   ├── Salt and pepper shakers
+│   │   ├── Saucer
+│   │   ├── Serving tray
+│   │   ├── Spoon
+│   │   ├── Teapot
+│   │   └── Wine glass
+│   └── Wok
+├── Lamp
+├── Lantern
+├── Laptop
+├── Light bulb
+├── Light switch
+├── Medical equipment
+│   ├── Band-aid
+│   ├── Stethoscope
+│   ├── Stretcher
+│   └── Syringe
+├── Microphone
+├── Mirror
+├── Musical instrument
+│   ├── Accordion
+│   ├── Banjo
+│   ├── Cello
+│   ├── Chime
+│   ├── Drum
+│   ├── Flute
+│   ├── Guitar
+│   ├── Harmonica
+│   ├── Harp
+│   ├── Harpsichord
+│   ├── Horn
+│   ├── Maracas
+│   ├── Musical keyboard
+│   ├── Oboe
+│   ├── Organ
+│   ├── Piano
+│   ├── Saxophone
+│   ├── Trombone
+│   ├── Trumpet
+│   └── Violin
+├── Office supplies
+│   ├── Adhesive tape
+│   ├── Box
+│   ├── Calculator
+│   ├── Envelope
+│   ├── Eraser
+│   ├── Fax
+│   ├── Paper cutter
+│   ├── Pen
+│   ├── Pencil case
+│   ├── Pencil sharpener
+│   ├── Plastic bag
+│   ├── Poster
+│   ├── Ring binder
+│   ├── Scissors
+│   ├── Stapler
+│   ├── Toilet paper
+│   └── Whiteboard
+├── Paper towel
+├── Parking meter
+├── Person
+│   ├── Boy
+│   ├── Girl
+│   ├── Man
+│   └── Woman
+├── Personal care
+│   ├── Cream
+│   ├── Crutch
+│   ├── Diaper
+│   ├── Glasses
+│   ├── Goggles
+│   ├── Sunglasses
+│   ├── Toothbrush
+│   └── Wheelchair
+├── Picture frame
+├── Pillow
+├── Plant
+│   ├── Flower
+│   │   ├── Lavender
+│   │   ├── Lily
+│   │   ├── Rose
+│   │   └── Sunflower
+│   ├── Houseplant
+│   └── Tree
+│       ├── Christmas tree
+│       ├── Maple
+│       ├── Palm tree
+│       └── Willow
+├── Plumbing fixture
+│   ├── Bathtub
+│   ├── Bidet
+│   ├── Shower
+│   ├── Sink
+│   ├── Tap
+│   └── Toilet
+├── Porch
+├── Power plugs and sockets
+├── Printer
+├── Remote control
+├── Sculpture
+│   ├── Bronze sculpture
+│   ├── Bust
+│   └── Snowman
+├── Skull
+├── Sports equipment
+│   ├── Balance beam
+│   ├── Ball
+│   │   ├── Cricket ball
+│   │   ├── Football
+│   │   ├── Rugby ball
+│   │   ├── Tennis ball
+│   │   └── Volleyball
+│   ├── Baseball bat
+│   ├── Baseball glove
+│   ├── Bicycle
+│   ├── Billiard table
+│   ├── Bow and arrow
+│   ├── Bowling equipment
+│   ├── Dumbbell
+│   ├── Flying disc
+│   ├── Golf ball
+│   ├── Helmet
+│   │   ├── Bicycle helmet
+│   │   └── Football helmet
+│   ├── Hiking equipment
+│   ├── Horizontal bar
+│   ├── Indoor rower
+│   ├── Lifejacket
+│   ├── Paddle
+│   ├── Parachute
+│   ├── Punching bag
+│   ├── Racket
+│   │   ├── Table tennis racket
+│   │   └── Tennis racket
+│   ├── Roller skates
+│   ├── Scoreboard
+│   ├── Skateboard
+│   ├── Ski
+│   ├── Snowboard
+│   ├── Stationary bicycle
+│   ├── Surfboard
+│   ├── Training bench
+│   └── Treadmill
+├── Stairs
+├── Street light
+├── Swimming pool
+├── Tablet computer
+├── Telephone
+│   ├── Corded phone
+│   └── Mobile phone
+├── Television
+├── Tent
+├── Tool
+│   ├── Axe
+│   ├── Binoculars
+│   ├── Camera
+│   ├── Chainsaw
+│   ├── Chisel
+│   ├── Container
+│   │   ├── Barrel
+│   │   ├── Beaker
+│   │   ├── Bottle
+│   │   ├── Flowerpot
+│   │   ├── Jug
+│   │   ├── Picnic basket
+│   │   ├── Tin can
+│   │   └── Waste container
+│   ├── Drill
+│   ├── Flashlight
+│   ├── Grinder
+│   ├── Hammer
+│   ├── Kitchen utensil
+│   │   ├── Bottle opener
+│   │   ├── Can opener
+│   │   ├── Chopsticks
+│   │   ├── Cutting board
+│   │   ├── Drinking straw
+│   │   ├── Fork
+│   │   ├── Knife
+│   │   ├── Ladle
+│   │   ├── Measuring cup
+│   │   ├── Pizza cutter
+│   │   ├── Spatula
+│   │   ├── Spoon
+│   │   └── Whisk
+│   ├── Ladder
+│   ├── Nail
+│   ├── Ratchet
+│   ├── Ruler
+│   ├── Scale
+│   ├── Scissors
+│   ├── Screwdriver
+│   ├── Snowplow
+│   ├── Toothbrush
+│   ├── Torch
+│   ├── Tripod
+│   └── Wrench
+├── Toy
+│   ├── Balloon
+│   ├── Dice
+│   ├── Doll
+│   ├── Flying disc
+│   ├── Kite
+│   └── Teddy bear
+├── Traffic light
+├── Traffic sign
+│   └── Stop sign
+├── Vase
+├── Vehicle
+│   ├── Aircraft
+│   │   ├── Airplane
+│   │   ├── Helicopter
+│   │   └── Rocket
+│   ├── Land vehicle
+│   │   ├── Ambulance
+│   │   ├── Bicycle
+│   │   ├── Bus
+│   │   ├── Car
+│   │   │   ├── Limousine
+│   │   │   └── Van
+│   │   ├── Cart
+│   │   ├── Golf cart
+│   │   ├── Motorcycle
+│   │   ├── Segway
+│   │   ├── Snowmobile
+│   │   ├── Tank
+│   │   ├── Taxi
+│   │   ├── Train
+│   │   ├── Truck
+│   │   ├── Unicycle
+│   │   └── Wheelchair
+│   └── Watercraft
+│       ├── Boat
+│       │   ├── Barge
+│       │   ├── Canoe
+│       │   └── Gondola
+│       ├── Jet ski
+│       └── Submarine
+├── Weapon
+│   ├── Axe
+│   ├── Bomb
+│   ├── Bow and arrow
+│   ├── Cannon
+│   ├── Dagger
+│   ├── Handgun
+│   ├── Knife
+│   ├── Missile
+│   ├── Rifle
+│   ├── Shotgun
+│   ├── Sword
+│   └── Tank
+├── Window
+└── Window blind
+

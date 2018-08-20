@@ -4,7 +4,7 @@
 - Heap
 - DP
 - Backtrack
-- Search
+- Search (divide and conquer)
 - Sort
 - Tree
 - Dual Pointer
@@ -14,4 +14,5 @@
 - Math
 
 
-- google code jam solution
+- google code jam solutions
+- nowcoder code solutions
